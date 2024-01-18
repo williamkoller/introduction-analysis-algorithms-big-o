@@ -77,4 +77,11 @@ def logarithm(arr, target):
     return -1
 ```
 
+```python
+def euclidean_search(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+```
+
 <img src="/imgs/logaritma.png" alt="complexidade-logaritmica" title="complexidade-logaritmica" align="center" />
