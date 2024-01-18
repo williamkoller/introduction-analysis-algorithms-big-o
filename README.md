@@ -15,3 +15,19 @@ O desempenho de um algoritmo é fundamental para a eficiência e escalabilidade 
 <h3>3 - Vamos falar sobre desempenho, do jeito certo?</h3>
 
 Medir o desempenho de um algoritmo requer técnicas adequadas para obter resultados precisos. É importante evitar armadilhas comuns, como medir o tempo de execução em um ambiente não controlado ou medir apenas um caso específico em vez de uma amostra representativa de entradas.
+
+<h3>4 - Vamos falar sobre complexidade linear?</h3>
+
+A complexidade linear descreve um algoritmo cujo tempo de execução aumenta linearmente com o tamanho da entrada. Isso significa que o tempo de execução é proporcional ao número de elementos na entrada.
+
+Exemplo codigo linear: 
+
+```python
+def sum_array_complexity(arr):
+    total = 0
+    for i in arr:
+        total += i
+    return total
+```
+
+<img src="/imgs/linear.png" alt="complexidade-linear" title="complexidade-linear" align="center" />
