@@ -77,6 +77,7 @@ def logarithm(arr, target):
     return -1
 ```
 
+
 ```python
 def euclidean_search(a, b):
     while b:
