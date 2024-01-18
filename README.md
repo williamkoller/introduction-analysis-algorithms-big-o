@@ -86,3 +86,21 @@ def euclidean_search(a, b):
 ```
 
 <img src="/imgs/logaritma.png" alt="complexidade-logaritmica" title="complexidade-logaritmica" align="center" />
+
+<h3>7 - Vamos falar sobre complexidade quadratica?</h3>
+
+A complexidade quadrática descreve um algoritmo cujo tempo de execução aumenta quadraticamente com o tamanho da entrada. Isso significa que o tempo de execução é proporcional ao quadrado do número de elementos na entrada.
+
+Exemplo codigo quadratica:
+
+```python
+def sum_square_matrix(matrix):
+    n = len(matrix)
+    total = 0
+    for i in range(n):
+        for j in range(n):
+            total += matrix[i][j]
+    return total
+```
+
+<img src="/imgs/quadratica.png" alt="complexidade-quadratica" title="complexidade-quadratica" align="center" />
