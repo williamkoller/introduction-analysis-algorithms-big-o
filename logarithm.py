@@ -1,5 +1,3 @@
-import math
-
 
 def logarithm(arr, target):
     low = 0
@@ -17,5 +15,8 @@ def logarithm(arr, target):
 
 if __name__ == '__main__':
     my_array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    print(logarithm(my_array, 6))
     print(logarithm(my_array, 10))
+    print(logarithm(my_array, 1))
+
 
