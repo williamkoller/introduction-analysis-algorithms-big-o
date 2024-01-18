@@ -103,4 +103,34 @@ def sum_square_matrix(matrix):
     return total
 ```
 
+```python
+def pair_sum(arr, target):
+    pairs = []
+    for i in range(len(arr)):
+        for j in range(i+1, len(arr)):
+            if arr[i] + arr[j] == target:
+                pairs.append((arr[i], arr[j]))
+    return pairs
+```
+
 <img src="/imgs/quadratica.png" alt="complexidade-quadratica" title="complexidade-quadratica" align="center" />
+
+
+<h3>8 - Vamos falar sobre complexidade cubica?</h3>
+
+A complexidade cúbica descreve um algoritmo cujo tempo de execução aumenta cúbicamente com o tamanho da entrada. Isso significa que o tempo de execução é proporcional ao cubo do número de elementos na entrada.
+
+Exemplo codigo cubica:
+
+```python
+def multiply_matrices(A, B):
+    n = len(A)
+    C = [[0 for _ in range(n)] for _ in range(n)]
+    for i in range(n):
+        for j in range(n):
+            for k in range(n):
+                C[i][j] += A[i][k] * B[k][j]
+    return C
+```
+
+<img src="/imgs/cubica.png" alt="complexidade-cubica" title="complexidade-cubica" align="center" />
