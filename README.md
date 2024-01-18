@@ -39,3 +39,19 @@ def linear_search(array, target):
 ```
 
 <img src="/imgs/linear.png" alt="complexidade-linear" title="complexidade-linear" align="center" />
+
+<h3>5 - Vamos falar sobre complexidade constante?</h3>
+
+A complexidade constante descreve um algoritmo cujo tempo de execução não varia com o tamanho da entrada. Isso significa que o tempo de execução é constante, independentemente do número de elementos na entrada.
+
+Examplo codigo constante:
+
+```python
+def sum_first_two(arr):
+    if len(arr) >= 2:
+        return arr[0] + arr[1]
+    else:
+        return None
+```
+
+<img src="/imgs/constante.png" alt="complexidade-constante" title="complexidade-constante" align="center" />
