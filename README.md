@@ -55,3 +55,26 @@ def sum_first_two(arr):
 ```
 
 <img src="/imgs/constante.png" alt="complexidade-constante" title="complexidade-constante" align="center" />
+
+<h3>6 - Vamos falar sobre complexidade logarítmica?</h3>
+
+A complexidade logarítmica descreve um algoritmo cujo tempo de execução aumenta logaritmicamente com o tamanho da entrada. Isso significa que o tempo de execução é proporcional ao logaritmo do número de elementos na entrada.
+
+Exemplo codigo logaritmico:
+
+```python
+def logarithm(arr, target):
+    low = 0
+    high = len(arr) - 1
+    while low <= high:
+        mid = (low+high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+```
+
+<img src="/imgs/logaritma.png" alt="complexidade-logaritmica" title="complexidade-logaritmica" align="center" />
