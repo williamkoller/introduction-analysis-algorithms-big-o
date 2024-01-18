@@ -30,4 +30,12 @@ def sum_array_complexity(arr):
     return total
 ```
 
+```python
+def linear_search(array, target):
+    for i in range(len(array)):
+        if array[i] == target:
+            return i
+    return -1
+```
+
 <img src="/imgs/linear.png" alt="complexidade-linear" title="complexidade-linear" align="center" />
