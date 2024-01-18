@@ -134,3 +134,19 @@ def multiply_matrices(A, B):
 ```
 
 <img src="/imgs/cubica.png" alt="complexidade-cubica" title="complexidade-cubica" align="center" />
+
+<h3>9 - Vamos falar sobre complexidade exponencial?</h3>
+
+A complexidade exponencial descreve um algoritmo cujo tempo de execução aumenta exponencialmente com o tamanho da entrada. Isso significa que o tempo de execução é proporcional a uma constante elevada à potência do número de elementos na entrada.
+
+Exemplo codigo exponencial:
+
+```python
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+```
+
+<img src="/imgs/exponencial.png" alt="complexidade-exponencial" title="complexidade-exponencial" align="center" />
