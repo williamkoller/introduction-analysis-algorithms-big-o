@@ -196,3 +196,15 @@ def sum_array(arr):
 ```
 
 <img src="/imgs/big-o-linear.png" alt="complexidade-big-o" title="complexidade-big-o" align="center" />
+
+Exemplo codigo Big-O - O(1):
+
+```python
+def sum_first_two(arr):
+    if len(arr) >= 2:
+        return arr[0] + arr[1]
+    else:
+        return None
+```
+
+<img src="/imgs/big-o-constante.png" alt="complexidade-big-o" title="complexidade-big-o" align="center" />
