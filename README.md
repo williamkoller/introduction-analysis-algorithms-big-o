@@ -402,3 +402,43 @@ Duas perspectivas de escalabilidade:
 Eventualmente uma saida "boa o suficiente", produzida em um tempo menor eh preferivel a saida "perfeita", produzida em mais tempo.
 
 <img src="/imgs/escalabilidade-2.png" alt="escalabilidade-2" title="escalabilidade-2" align="center" />
+
+Exemplo codigo O(n):
+
+```python
+def insert_sorted(arr, n):
+  i = len(arr) - 1
+  arr.append(n)
+  while i >= 0 and arr[i] > n:
+    arr[i + 1] = arr[i]
+    i -= 1
+  arr[i + 1] = n
+  return arr
+```
+
+A insercao em uma AVL acontece em O(log n)
+
+Bancos de dados utilizam uma estrutura de dados chamada B-tree para indices.
+
+<h3>15 - Como determinar a complexidade de um algoritmo?</h3>
+
+Existem várias técnicas para determinar a complexidade de um algoritmo, incluindo análise de tempo, análise de espaço e análise assintótica. A análise assintótica, representada por Big-O, é uma forma de descrever a complexidade de um algoritmo sem se preocupar com constantes e termos de baixa ordem. Ela é a técnica mais comum e útil para determinar a complexidade de um algoritmo.
+
+Qual eh o impacto do auemnto de carga de trabalho no tempo de execucao do meu codigo?
+
+Como determinar a complexidade da busca de "maior valor"?
+
+```python
+def find_max(numbers):
+  max_number = numbers[0]
+  for number in numbers:
+    if number > max_number:
+      max_number = number
+  return max_number
+```
+
+<img src="/imgs/complexidade-algoritmo.png" alt="complexidade-algoritmo" title="complexidade-algoritmo" align="center" />
+
+<img src="/imgs/complexidade-algoritmo-2.png" alt="complexidade-algoritmo-2" title="complexidade-algoritmo-2" align="center" />
+
+<img src="/imgs/complexidade-algoritmo-3.png" alt="complexidade-algoritmo-3" title="complexidade-algoritmo-3" align="center" />
