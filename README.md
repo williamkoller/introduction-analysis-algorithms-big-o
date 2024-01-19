@@ -400,3 +400,5 @@ Duas perspectivas de escalabilidade:
 <img src="/imgs/escalabilidade.png" alt="escalabilidade" title="escalabilidade" align="center" />
 
 Eventualmente uma saida "boa o suficiente", produzida em um tempo menor eh preferivel a saida "perfeita", produzida em mais tempo.
+
+<img src="/imgs/escalabilidade-2.png" alt="escalabilidade-2" title="escalabilidade-2" align="center" />
