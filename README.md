@@ -286,3 +286,45 @@ def permutations(arr):
 ```
 
 <img src="/imgs/big-o-fatorial.png" alt="complexidade-big-o" title="complexidade-big-o" align="center" />
+
+<h3>12 - Vamos falar sobre P e NP?</h3>
+
+P e NP são classes de problemas em teoria da computação. Problemas em P podem ser resolvidos em tempo polinomial, enquanto problemas em NP podem ser verificados em tempo polinomial. A questão P = NP é uma das perguntas mais importantes em ciência da computação.
+
+Exemplo codigo O(n2) P:
+
+```python
+def is_valid_solution(board):
+    # verify that each row, column, and 3x3 square contains the numbers 1-9
+    for row in range(9):
+        used_nums = set()
+        for col in range(9):
+            num = board[row][col]
+            if num in used_nums:
+                return False
+            if num != 0:
+                used_nums.add(num)
+
+    # verify that each column contains the numbers 1-9
+    for col in range(9):
+        used_nums = set()
+        for row in range(9):
+            num = board[row][col]
+            if num in used_nums:
+                return False
+            if num != 0:
+                used_nums.add(num)
+
+    # verify that each 3x3 square contains the numbers 1-9
+    for i in range(3):
+        for j in range(3):
+            used_nums = set()
+            for row in range(3):
+                for col in range(3):
+                    num = board[3*i + row][3*j + col]
+                    if num in used_nums:
+                        return False
+                    if num != 0:
+                        used_nums.add(num)
+    return True
+```
