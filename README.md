@@ -149,4 +149,34 @@ def fibonacci(n):
         return fibonacci(n - 1) + fibonacci(n - 2)
 ```
 
+```python
+def cubic_complexity_algorithm(n):
+    result = 0
+    for i in range(n):
+        for j in range(n):
+            for k in range(n):
+                result += 1
+    return result
+```
+
 <img src="/imgs/exponencial.png" alt="complexidade-exponencial" title="complexidade-exponencial" align="center" />
+
+<h3>10 - Vamos falar sobre complexidade fatorial?</h3>
+
+A complexidade fatorial descreve um algoritmo cujo tempo de execução aumenta fatorialmente com o tamanho da entrada. Isso significa que o tempo de execução é proporcional ao fatorial do número de elementos na entrada.
+
+```python
+def permutations(arr):
+    if len(arr) == 0:
+        return [[]]
+    else:
+        total = []
+        for i in range(len(arr)):
+            remaining_elements = arr[:i] + arr[i+1:]
+            sub_permutations = permutations(remaining_elements)
+            for permutation in sub_permutations:
+                total.append([arr[i]] + permutation)
+        return total
+```
+
+<img src="/imgs/fatorial.png" alt="complexidade-fatorial" title="complexidade-fatorial" align="center" />
