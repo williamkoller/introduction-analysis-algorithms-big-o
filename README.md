@@ -398,3 +398,5 @@ Duas perspectivas de escalabilidade:
 2. Mais requisicoes
 
 <img src="/imgs/escalabilidade.png" alt="escalabilidade" title="escalabilidade" align="center" />
+
+Eventualmente uma saida "boa o suficiente", produzida em um tempo menor eh preferivel a saida "perfeita", produzida em mais tempo.
