@@ -442,3 +442,19 @@ def find_max(numbers):
 <img src="/imgs/complexidade-algoritmo-2.png" alt="complexidade-algoritmo-2" title="complexidade-algoritmo-2" align="center" />
 
 <img src="/imgs/complexidade-algoritmo-3.png" alt="complexidade-algoritmo-3" title="complexidade-algoritmo-3" align="center" />
+
+<h3>16 - Como determinar a complexidade do BubbleSort?</h3>
+
+O BubbleSort é um algoritmo de ordenação que percorre uma lista várias vezes. Em cada iteração, ele compara pares de elementos adjacentes e os troca se estiverem na ordem errada. O algoritmo continua até que a lista esteja ordenada.
+
+```python
+def bubble_sort(arr):
+  n = len(arr)
+  for i in range(n):
+    for j in range(n - 1):
+      if arr[j] > arr[j + 1]:
+        arr[j], arr[j + 1] = arr[j + 1], arr[j]
+  return arr
+```
+
+<img src="/imgs/bubble-sort.png" alt="bubble-sort" title="bubble-sort" align="center" />
