@@ -208,3 +208,81 @@ def sum_first_two(arr):
 ```
 
 <img src="/imgs/big-o-constante.png" alt="complexidade-big-o" title="complexidade-big-o" align="center" />
+
+Exemplo codigo Big-O - O(log n):
+
+```python
+def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+    while low <= high:
+        mid = (low+high) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+```
+
+<img src="/imgs/big-o-logaritmica.png" alt="complexidade-big-o" title="complexidade-big-o" align="center" />
+
+Exemplo codigo Big-O - O(n^2):
+
+```python
+def sum_square_matrix(matrix):
+    n = len(matrix)
+    total = 0
+    for i in range(n):
+        for j in range(n):
+            total += matrix[i][j]
+    return total
+```
+
+<img src="/imgs/big-o-quadratica.png" alt="complexidade-big-o" title="complexidade-big-o" align="center" />
+
+Exemplo codigo Big-O - O(n^3):
+
+```python
+def multiply_matrices(A, B):
+    n = len(A)
+    C = [[0 for _ in range(n)] for _ in range(n)]
+    for i in range(n):
+        for j in range(n):
+            for k in range(n):
+                C[i][j] += A[i][k] * B[k][j]
+    return C
+```
+
+<img src="/imgs/big-o-cubica.png" alt="complexidade-big-o" title="complexidade-big-o" align="center" />
+
+Exemplo codigo Big-O - O(2^n):
+
+```python
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+```
+
+<img src="/imgs/big-o-exponencial.png" alt="complexidade-big-o" title="complexidade-big-o" align="center" />
+
+Exemplo codigo Big-O - O(n!):
+
+```python
+def permutations(arr):
+    if len(arr) == 0:
+        return [[]]
+    else:
+        total = []
+        for i in range(len(arr)):
+            remaining_elements = arr[:i] + arr[i+1:]
+            sub_permutations = permutations(remaining_elements)
+            for permutation in sub_permutations:
+                total.append([arr[i]] + permutation)
+        return total
+```
+
+<img src="/imgs/big-o-fatorial.png" alt="complexidade-big-o" title="complexidade-big-o" align="center" />
