@@ -291,7 +291,7 @@ def permutations(arr):
 
 P e NP são classes de problemas em teoria da computação. Problemas em P podem ser resolvidos em tempo polinomial, enquanto problemas em NP podem ser verificados em tempo polinomial. A questão P = NP é uma das perguntas mais importantes em ciência da computação.
 
-Exemplo codigo O(n2) P:
+Exemplo codigo O(n^2) P:
 
 ```python
 def is_valid_solution(board):
@@ -328,3 +328,61 @@ def is_valid_solution(board):
                         used_nums.add(num)
     return True
 ```
+
+<h3>13 - Vamos falar sobre complexidade assintotica?</h3>
+
+A complexidade assintótica descreve o comportamento do algoritmo quando a entrada aumenta para um tamanho infinito. Ela é representada por Big-O e é uma forma de descrever a complexidade de um algoritmo sem se preocupar com constantes e termos de baixa ordem.
+
+Complexidade assintotica eh descrita por Big-O
+
+Exemplo codigo O(n):
+
+```python
+def find_min_max(arr):
+  n = len(arr)
+  min_val = max_val = arr[0]
+  for i in range(1, n):
+    if arr[i] < min_val:
+      min_val = arr[i]
+    if arr[i] > max_val:
+      max_val = arr[i]
+  return min_val, max_val
+```
+
+```python
+def best_min_max(arr):
+  n = len(arr)
+  min_val = arr[0]
+  for i in range(1, n):
+    if arr[i] < min_val:
+      min_val = arr[i]
+
+  for i in range(1, n):
+    if arr[i] > min_val:
+      max_val = arr[i]
+
+  return min_val, max_val
+```
+
+```python
+def find_min(arr):
+  n = len(arr)
+  min_val = arr[0]
+  for i in range(1, n):
+    if arr[i] < min_val:
+      min_val = arr[i]
+  return min_val
+
+def find_max(arr):
+  n = len(arr)
+  max_val = arr[0]
+  for i in range(1, n):
+    if arr[i] > max_val:
+      max_val = arr[i]
+  return max_val
+
+def find_min_max_best(arr):
+  return find_min(arr), find_max(arr)
+```
+
+<img src="/imgs/assintotica.png" alt="complexidade-assintotica" title="complexidade-assintotica" align="center" />
