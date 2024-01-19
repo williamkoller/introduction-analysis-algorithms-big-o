@@ -386,3 +386,15 @@ def find_min_max_best(arr):
 ```
 
 <img src="/imgs/assintotica.png" alt="complexidade-assintotica" title="complexidade-assintotica" align="center" />
+
+<h3>14 - Vamos falar sobre escalabilidade?</h3>
+
+A escalabilidade descreve a capacidade de um sistema de lidar com um aumento na carga de trabalho. Isso pode ser medido em termos de desempenho, tempo de resposta ou tempo de execução. A escalabilidade é importante para garantir que um sistema possa lidar com um aumento na carga de trabalho sem degradar o desempenho.
+
+Duas perspectivas de escalabilidade:
+
+1. Requisicoes com "entradas maiores"
+
+2. Mais requisicoes
+
+<img src="/imgs/escalabilidade.png" alt="escalabilidade" title="escalabilidade" align="center" />
