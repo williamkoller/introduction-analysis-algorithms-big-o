@@ -180,3 +180,19 @@ def permutations(arr):
 ```
 
 <img src="/imgs/fatorial.png" alt="complexidade-fatorial" title="complexidade-fatorial" align="center" />
+
+<h3>11 - Vamos comecar a falar sobre Big-O?</h3>
+
+Big-O é uma notação matemática que descreve o comportamento de tempo de execução de um algoritmo em relação ao tamanho da entrada. Isso permite comparar algoritmos independentemente do hardware ou linguagem de programação usada para implementá-los.
+
+Exemplo codigo Big-O - O(n):
+
+```python
+def sum_array(arr):
+    total = 0
+    for i in arr:
+        total += i
+    return total
+```
+
+<img src="/imgs/big-o-linear.png" alt="complexidade-big-o" title="complexidade-big-o" align="center" />
